@@ -1,0 +1,259 @@
+
+
+
+a{
+    text-decoration: none;
+    color: #353535;
+}
+:root{ 
+    --fontfam: "Poppins", sans-serif;
+    --fontclr: #353535;
+    --font2: "PT Sans", sans-serif;
+
+}
+/* Navbar */
+#nav ul li a {
+    font-family: var(--fontfam);
+    font-weight: 500;
+    font-size: 15px;
+    padding: 18px 25px;
+    position: relative;
+}
+#nav ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: var(--fontclr);
+    visibility: hidden;
+}
+#nav ul li a:hover::before{
+    visibility: visible;
+    width: 100%;
+    transition: 0.4s;
+}
+ .row {
+    display: flex;
+} 
+/* end of navbar */
+/* BANNER */
+#BANNER .container h4 {
+    font-family: var(--fontfam);
+    font-size: 24px;
+    font-weight: 400;
+}
+#BANNER .container h2 {
+    font-family: var(--font2);
+    font-size: 64px;
+    font-weight: 700;
+}
+#BANNER .container p {
+    font-family: var(--fontfam);
+    font-size: 20px;
+    font-weight: 400;
+}
+#BANNER .banner_btn {
+    border-radius: 20px;
+    display: inline-block;
+    padding: 16px 0px 17px 43px;
+    font-family: var(--fontfam);
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #FFCC00;
+}
+  #BANNER .banner_btn span {
+    padding: 0 47px 0 11px;
+} 
+#BANNER .banner_btn:hover{
+    background-color: transparent;
+    transition: 0.5s;
+}
+#BANNER .btn-2 {
+    border-radius: 20px;
+    display: inline-block;
+    padding: 16px 0px 17px 43px;
+    font-family: var(--fontfam);
+    font-weight: 600;
+    font-size: 20px;
+    background-color: transparent;
+}
+#BANNER .btn-2 span {
+    padding: 0 47px 0 11px;
+}
+#BANNER .btn-2:hover {
+    background-color: #FFCC00;
+    transition: 0.5s;
+}
+#BANNER #socials {
+    font-family: var(--fontfam);
+    font-size: 22px;
+    font-weight: 500;
+}
+/* END OF BANNER */
+/* section */
+
+#About {
+    background-color: #FFCC00;
+}
+#About #imp h2 {
+    font-family: var(--font2);
+    font-size: 50px;
+    font-weight: 700;
+}
+#About #imp p {
+    font-family: var(--fontfam);
+    font-size: 20px;
+    font-weight: 400;
+}
+#imp {
+    margin-top: 200px;
+}
+#About #imp button {
+    border-radius: 20px;
+    padding: 20px 30px ;
+    font-family: var(--fontfam);
+    font-size: 18px;
+    font-weight: 500;
+}
+#About #imp button:hover{
+    background-color: #FFCC00;
+    transition: 0.5s;
+}
+
+/* end of section */
+/*  2nd sect */
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em ;
+    background-color: #f8f8f8;
+}
+
+.feature-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2em;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1em;
+}
+
+.feature-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.feature-card p {
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+/* end of 2nd sect */
+/* Branding */
+#branding #container_brand {
+    background-color: #FFCC00;
+    border-radius: 20px;
+}
+#branding #brandthings h1{
+    font-family: var(--font2);
+    font-size: 44px;
+    font-weight: 700;
+}
+#branding #brandthings p {
+    font-family: var(--fontfam);
+    font-size: 18px;
+    font-weight: 400;
+}
+#branding #brandthings button{
+    font-family: var(--fontfam);
+    font-size: 17px;
+    font-weight: 500;
+}
+#branding #brandthings button{
+    display: inline-block;
+    padding: 10px 25px;
+}
+#branding #brandthings {
+    margin-top: 170px;
+}
+
+/* Branding end */
+/* Help */
+#Helpline {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#help-design {
+    border-radius: 20px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+#help-design .card {
+    margin: 10px 0;
+    box-sizing: border-box;
+    box-shadow: 1px 3px 2px;
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+}
+#help-design .card:hover {
+    transform: translateY(-5px);
+}
+
+#help-design .card-title {
+    font-family: var(--fontfam);
+    font-size: 18px;
+    font-weight: 600;
+}
+#help-design .card p {
+    font-family: var(--fontfam);
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: auto;
+
+}
+.How_i_help {
+    max-width: 400px;
+    text-align: left;
+}
+
+.How_i_help span {
+    display: inline-block;
+    margin-right: 30px;
+    text-align: center;
+}
+.How_i_help span p {
+    font-family: var(--fontfam);
+    font-size: 14px;
+    font-weight: 500;
+}
+#Helpline .container {
+    
+    
+    
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* help end */
+
